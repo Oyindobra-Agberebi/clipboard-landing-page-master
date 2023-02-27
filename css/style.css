@@ -108,3 +108,39 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+
+/*Page 4*/
+.page4 > h2 {
+    margin: 1em 1em;
+    position: relative;
+}
+
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details > a {
+    margin: .5em;
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+}
+
+.details > a:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.socials {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 2em auto;
+}
+
+.socials img {
+    width: 20px;
+    height: 20px;
+}
