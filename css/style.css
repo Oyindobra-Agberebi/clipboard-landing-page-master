@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --greenColor: hsl(171, 66%, 44%);
+    --blueColor: hsl(233, 100%, 69%);
+}
+
 body {
     width: 100%;
     min-height: 100vh;
@@ -22,44 +27,67 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    padding: 2em;
     text-align: center;
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
-/* .hero {
-    text-align: center;
-    padding: 20px 0;
-} */
+.page1, .page2, .page3, .page4-subsection, .hero {
+    padding: 2em;
+}
+
+.hero {
+    background-image: url('../images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
+}
+
+.logo {
+    width: 6em;
+    height: 6em;
+    margin: 4em auto;
+}
+
+.logo > img {
+    width: 100%;
+    height: 100%;
+}
 
 .btn {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    
 }
 
 .btn a {
-    width: 250px;
-    padding: 10px 0;
+    
+    padding: .7em 5em;
     text-decoration: none;
     color: white;
     border-radius: 50px;
     margin: 10px auto;
 }
 
+.btn a:hover {
+    font-weight: bold;
+}
+
 .ios {
-    background-color: hsl(171, 66%, 44%);
+    background-color: var(--greenColor);
+    filter: drop-shadow(0 8px 10px hsla(171, 66%, 44%, 0.5));
 }
 
 .mac {
-    background-color: hsl(233, 100%, 69%);
+    background-color: var(--blueColor);
+    filter: drop-shadow(0 8px 10px hsl(233, 100%, 69%));
 }
 
 
 /*Page 1*/
 
 .page1 h2 {
-    margin-top: 5em;
+    margin-top: 3em;
 }
 
 .description {
@@ -68,7 +96,7 @@ body {
 }
 
 .components {
-    padding: 3em 0 5em;
+    padding: 3em 0 4em;
 }
 
 .component-text {
@@ -90,27 +118,36 @@ body {
 }
 
 /*Page 2*/
-.page2 {
-    margin: 5em 0;
-}
 
 
 /*Page 3*/
 
 .information {
-    margin: 5em 0;
+    margin: 4em 0 5em;
 }
 
-.page3 > img {
+.page3 > .information  img {
     width: 25px;
     height: 25px;
-    margin: 2em 0;
+    margin: 1em 0;
 }
 
 .partners {
     display: flex;
     flex-direction: column;
 }
+
+.partners .partners-img {
+    width: 100px;
+    height: 50pxpx;
+    margin: 1em auto;
+}
+
+.partners-img img {
+    width: 100%;
+    height: 100%;
+}
+
 
 
 /*Page 4*/
@@ -119,6 +156,28 @@ body {
     position: relative;
 }
 
+.page4 .btn {
+    margin: 1.5em auto 8em;
+}
+/*Footer*/
+footer {
+    background-color: hsla(201, 11%, 66%, 0.1);
+    padding: 2em;
+}
+.small-logo {
+    width: 2em;
+    height: 2em;
+    margin: 0 auto 2em;
+}
+
+.small-logo > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
 
 .details {
     display: flex;
@@ -126,7 +185,7 @@ body {
 }
 
 .details > a {
-    margin: .5em;
+    margin-bottom: 1em;
     text-decoration: none;
     color: hsl(210, 10%, 33%);
 }
@@ -137,13 +196,13 @@ body {
 }
 
 .socials {
-    width: 150px;
-    display: flex;
-    justify-content: space-between;
+    width: 110px;
+   
     margin: 2em auto;
 }
 
 .socials img {
     width: 20px;
     height: 20px;
+    margin-right: 10px;
 }
